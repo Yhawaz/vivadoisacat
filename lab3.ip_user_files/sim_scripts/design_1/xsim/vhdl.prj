@@ -1,0 +1,26 @@
+vhdl xil_defaultlib  \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/DVI_Constants.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/ChannelBond.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/GlitchFilter.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/TWI_SlaveCtl.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/EEPROM_8b.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/ResyncToBUFG.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsyncReset.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncBase.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Decoder.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_0_0/sim/design_1_dvi2rgb_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_48ac_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd" \
+"../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2dvi_1_0/sim/design_1_rgb2dvi_1_0.vhd" \
+
+# Do not sort compile order
+nosort
