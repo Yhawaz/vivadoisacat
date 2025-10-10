@@ -21,6 +21,7 @@ vhdl xil_defaultlib  \
 "../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd" \
 "../../../../lab3.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd" \
 "../../../bd/design_1/ip/design_1_rgb2dvi_1_0/sim/design_1_rgb2dvi_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
 
 # Do not sort compile order
 nosort

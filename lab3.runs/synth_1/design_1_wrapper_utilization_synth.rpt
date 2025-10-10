@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Thu Sep 25 19:48:14 2025
+| Date         : Thu Oct  9 20:48:11 2025
 | Host         : eecs-digital-47 running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -157,25 +157,30 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 8. Black Boxes
 --------------
 
-+---------------------------------+------+
-|             Ref Name            | Used |
-+---------------------------------+------+
-| design_1_xpm_cdc_gen_3_0        |    1 |
-| design_1_xpm_cdc_gen_2_0        |    1 |
-| design_1_xpm_cdc_gen_1_0        |    1 |
-| design_1_xpm_cdc_gen_0_0        |    1 |
-| design_1_tristate_1_0           |    1 |
-| design_1_tristate_0_0           |    1 |
-| design_1_smartconnect_0_0       |    1 |
-| design_1_rst_ps7_0_100M_0       |    1 |
-| design_1_rgb2dvi_1_0            |    1 |
-| design_1_processing_system7_0_0 |    1 |
-| design_1_ila_0_0                |    1 |
-| design_1_fir_wrapper_0_0        |    1 |
-| design_1_fir_interface_0_1      |    1 |
-| design_1_dvi2rgb_0_0            |    1 |
-| design_1_clk_wiz_0_0            |    1 |
-+---------------------------------+------+
++-----------------------------------------+------+
+|                 Ref Name                | Used |
++-----------------------------------------+------+
+| design_1_xpm_cdc_gen_3_0                |    1 |
+| design_1_xpm_cdc_gen_2_0                |    1 |
+| design_1_xpm_cdc_gen_1_0                |    1 |
+| design_1_xpm_cdc_gen_0_0                |    1 |
+| design_1_tristate_1_0                   |    1 |
+| design_1_tristate_0_0                   |    1 |
+| design_1_smartconnect_0_0               |    1 |
+| design_1_rst_ps7_0_100M_0               |    1 |
+| design_1_rgb2dvi_1_0                    |    1 |
+| design_1_processing_system7_0_0         |    1 |
+| design_1_ila_0_0                        |    1 |
+| design_1_fir_wrapper_0_0                |    1 |
+| design_1_fir_interface_0_1              |    1 |
+| design_1_dvi2rgb_0_0                    |    1 |
+| design_1_data_framer_w_0_0              |    1 |
+| design_1_clk_wiz_0_0                    |    1 |
+| design_1_axis_data_fifo_0_0             |    1 |
+| design_1_axi_mem_intercon_imp_auto_us_0 |    1 |
+| design_1_axi_mem_intercon_imp_auto_pc_0 |    1 |
+| design_1_axi_dma_0_0                    |    1 |
++-----------------------------------------+------+
 
 
 9. Instantiated Netlists

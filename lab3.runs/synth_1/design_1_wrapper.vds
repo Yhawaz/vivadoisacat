@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Sep 25 19:47:45 2025
-# Process ID         : 1433621
+# Start of session at: Thu Oct  9 20:47:43 2025
+# Process ID         : 3331347
 # Current directory  : /home/yhawaz/lab3/lab3.runs/synth_1
 # Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : /home/yhawaz/lab3/lab3.runs/synth_1/design_1_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : AMD Ryzen 7 5825U with Radeon Graphics
-# CPU Frequency      : 3856.450 MHz
+# CPU Frequency      : 3590.611 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 29342 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 37932 MB
-# Available Virtual  : 24319 MB
+# Available Virtual  : 24340 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -38,69 +38,110 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1433726
+INFO: [Synth 8-7075] Helper process launched with PID 3331462
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2232.621 ; gain = 430.574 ; free physical = 7652 ; free virtual = 21769
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2244.379 ; gain = 390.617 ; free physical = 7904 ; free virtual = 21909
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dvi2rgb_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_dvi2rgb_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dvi2rgb_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_dvi2rgb_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'aPixelClkLckd' of module 'design_1_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:210]
-WARNING: [Synth 8-7071] port 'pLocked' of module 'design_1_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:210]
-WARNING: [Synth 8-7023] instance 'dvi2rgb_0' of module 'design_1_dvi2rgb_0_0' has 20 connections declared, but only 18 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:210]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fir_interface_0_1' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_fir_interface_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_interface_0_1' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_fir_interface_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fir_wrapper_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_fir_wrapper_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_wrapper_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_fir_wrapper_0_0_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:271]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_rgb2dvi_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_rgb2dvi_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:353]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:353]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:353]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:353]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:353]
-INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_tristate_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_tristate_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_tristate_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_tristate_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_tristate_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_tristate_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_tristate_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_tristate_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_2_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_2_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_3_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_3_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-1433621-eecs-digital-47/realtime/design_1_xpm_cdc_gen_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:267]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:267]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:267]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 43 connections declared, but only 40 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:267]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:668]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:830]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:830]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:668]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'design_1_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:349]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'design_1_axis_data_fifo_0_0' has 13 connections declared, but only 12 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:349]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_data_framer_w_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_data_framer_w_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_data_framer_w_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_data_framer_w_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dvi2rgb_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_dvi2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dvi2rgb_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_dvi2rgb_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'aPixelClkLckd' of module 'design_1_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:375]
+WARNING: [Synth 8-7071] port 'pLocked' of module 'design_1_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:375]
+WARNING: [Synth 8-7023] instance 'dvi2rgb_0' of module 'design_1_dvi2rgb_0_0' has 20 connections declared, but only 18 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:375]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fir_interface_0_1' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_fir_interface_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_interface_0_1' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_fir_interface_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fir_wrapper_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_fir_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_wrapper_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_fir_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:436]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 107 connections declared, but only 96 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:445]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_rgb2dvi_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_rgb2dvi_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:553]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:553]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:553]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:553]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:553]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:560]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:560]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:560]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'design_1_smartconnect_0_0' has 78 connections declared, but only 75 given [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:560]
+INFO: [Synth 8-6157] synthesizing module 'design_1_tristate_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_tristate_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_tristate_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_tristate_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_tristate_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_tristate_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_tristate_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_tristate_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_0_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_0_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_1_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_1_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_2_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_2_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_3_0' [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_3_0' (0#1) [/home/yhawaz/lab3/lab3.runs/synth_1/.Xil/Vivado-3331347-eecs-digital-47/realtime/design_1_xpm_cdc_gen_3_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dvi2rgb_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:210]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:271]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_wrapper_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:255]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dvi2rgb_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:375]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:436]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_wrapper_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:420]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_framer_w_0'. This will prevent further optimization [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.v:365]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2315.559 ; gain = 513.512 ; free physical = 7553 ; free virtual = 21671
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2329.316 ; gain = 475.555 ; free physical = 7833 ; free virtual = 21840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.434 ; gain = 525.387 ; free physical = 7553 ; free virtual = 21671
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2341.191 ; gain = 487.430 ; free physical = 7832 ; free virtual = 21839
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.434 ; gain = 525.387 ; free physical = 7553 ; free virtual = 21671
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2341.191 ; gain = 487.430 ; free physical = 7832 ; free virtual = 21839
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2327.434 ; gain = 0.000 ; free physical = 7553 ; free virtual = 21671
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.191 ; gain = 0.000 ; free physical = 7832 ; free virtual = 21839
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -135,6 +176,16 @@ Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_r
 Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0_in_context.xdc] for cell 'design_1_i/rgb2dvi_1'
 Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
 Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/axis_data_fifo_0'
+Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/axis_data_fifo_0'
+Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_data_framer_w_0_0/design_1_data_framer_w_0_0/design_1_data_framer_w_0_0_in_context.xdc] for cell 'design_1_i/data_framer_w_0'
+Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_data_framer_w_0_0/design_1_data_framer_w_0_0/design_1_data_framer_w_0_0_in_context.xdc] for cell 'design_1_i/data_framer_w_0'
+Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [/home/yhawaz/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
 Parsing XDC File [/home/yhawaz/lab3/lab3.srcs/constrs_1/imports/lab3_files/base.xdc]
 Finished Parsing XDC File [/home/yhawaz/lab3/lab3.srcs/constrs_1/imports/lab3_files/base.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yhawaz/lab3/lab3.srcs/constrs_1/imports/lab3_files/base.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -143,11 +194,12 @@ Parsing XDC File [/home/yhawaz/lab3/lab3.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/yhawaz/lab3/lab3.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2376.359 ; gain = 0.000 ; free physical = 7552 ; free virtual = 21670
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.117 ; gain = 0.000 ; free physical = 7839 ; free virtual = 21846
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2376.395 ; gain = 0.000 ; free physical = 7552 ; free virtual = 21670
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.152 ; gain = 0.000 ; free physical = 7839 ; free virtual = 21846
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axis_data_fifo_0' at clock pin 's_axis_aclk' is different from the actual clock period '6.060', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/ila_0' at clock pin 'clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/xpm_cdc_gen_0' at clock pin 'dest_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/xpm_cdc_gen_1' at clock pin 'dest_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
@@ -156,23 +208,23 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2376.395 ; gain = 574.348 ; free physical = 7533 ; free virtual = 21651
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2390.152 ; gain = 536.391 ; free physical = 7858 ; free virtual = 21864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2384.363 ; gain = 582.316 ; free physical = 7533 ; free virtual = 21651
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2398.121 ; gain = 544.359 ; free physical = 7858 ; free virtual = 21864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2384.363 ; gain = 582.316 ; free physical = 7535 ; free virtual = 21653
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2398.121 ; gain = 544.359 ; free physical = 7858 ; free virtual = 21864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2384.363 ; gain = 582.316 ; free physical = 7535 ; free virtual = 21654
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2398.121 ; gain = 544.359 ; free physical = 7858 ; free virtual = 21865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -194,26 +246,30 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2384.363 ; gain = 582.316 ; free physical = 7566 ; free virtual = 21689
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2398.121 ; gain = 544.359 ; free physical = 7866 ; free virtual = 21878
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.363 ; gain = 675.316 ; free physical = 7484 ; free virtual = 21608
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2490.121 ; gain = 636.359 ; free physical = 7801 ; free virtual = 21813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.363 ; gain = 675.316 ; free physical = 7484 ; free virtual = 21608
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2490.121 ; gain = 636.359 ; free physical = 7801 ; free virtual = 21813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2487.379 ; gain = 685.332 ; free physical = 7477 ; free virtual = 21600
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2501.137 ; gain = 647.375 ; free physical = 7786 ; free virtual = 21798
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -231,107 +287,117 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------------------------+----------+
-|      |BlackBox name                   |Instances |
-+------+--------------------------------+----------+
-|1     |design_1_clk_wiz_0_0            |         1|
-|2     |design_1_dvi2rgb_0_0            |         1|
-|3     |design_1_fir_interface_0_1      |         1|
-|4     |design_1_fir_wrapper_0_0        |         1|
-|5     |design_1_ila_0_0                |         1|
-|6     |design_1_processing_system7_0_0 |         1|
-|7     |design_1_rgb2dvi_1_0            |         1|
-|8     |design_1_rst_ps7_0_100M_0       |         1|
-|9     |design_1_smartconnect_0_0       |         1|
-|10    |design_1_tristate_0_0           |         1|
-|11    |design_1_tristate_1_0           |         1|
-|12    |design_1_xpm_cdc_gen_0_0        |         1|
-|13    |design_1_xpm_cdc_gen_1_0        |         1|
-|14    |design_1_xpm_cdc_gen_2_0        |         1|
-|15    |design_1_xpm_cdc_gen_3_0        |         1|
-+------+--------------------------------+----------+
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |design_1_axi_dma_0_0                    |         1|
+|2     |design_1_axi_mem_intercon_imp_auto_pc_0 |         1|
+|3     |design_1_axi_mem_intercon_imp_auto_us_0 |         1|
+|4     |design_1_axis_data_fifo_0_0             |         1|
+|5     |design_1_clk_wiz_0_0                    |         1|
+|6     |design_1_data_framer_w_0_0              |         1|
+|7     |design_1_dvi2rgb_0_0                    |         1|
+|8     |design_1_fir_interface_0_1              |         1|
+|9     |design_1_fir_wrapper_0_0                |         1|
+|10    |design_1_ila_0_0                        |         1|
+|11    |design_1_processing_system7_0_0         |         1|
+|12    |design_1_rgb2dvi_1_0                    |         1|
+|13    |design_1_rst_ps7_0_100M_0               |         1|
+|14    |design_1_smartconnect_0_0               |         1|
+|15    |design_1_tristate_0_0                   |         1|
+|16    |design_1_tristate_1_0                   |         1|
+|17    |design_1_xpm_cdc_gen_0_0                |         1|
+|18    |design_1_xpm_cdc_gen_1_0                |         1|
+|19    |design_1_xpm_cdc_gen_2_0                |         1|
+|20    |design_1_xpm_cdc_gen_3_0                |         1|
++------+----------------------------------------+----------+
 
 Report Cell Usage: 
-+------+------------------------------+------+
-|      |Cell                          |Count |
-+------+------------------------------+------+
-|1     |design_1_clk_wiz_0            |     1|
-|2     |design_1_dvi2rgb_0            |     1|
-|3     |design_1_fir_interface_0      |     1|
-|4     |design_1_fir_wrapper_0        |     1|
-|5     |design_1_ila_0                |     1|
-|6     |design_1_processing_system7_0 |     1|
-|7     |design_1_rgb2dvi_1            |     1|
-|8     |design_1_rst_ps7_0_100M       |     1|
-|9     |design_1_smartconnect_0       |     1|
-|10    |design_1_tristate_0           |     1|
-|11    |design_1_tristate_1           |     1|
-|12    |design_1_xpm_cdc_gen_0        |     1|
-|13    |design_1_xpm_cdc_gen_1        |     1|
-|14    |design_1_xpm_cdc_gen_2        |     1|
-|15    |design_1_xpm_cdc_gen_3        |     1|
-|16    |IBUF                          |     4|
-|17    |OBUF                          |     2|
-+------+------------------------------+------+
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |design_1_axi_dma_0                    |     1|
+|2     |design_1_axi_mem_intercon_imp_auto_pc |     1|
+|3     |design_1_axi_mem_intercon_imp_auto_us |     1|
+|4     |design_1_axis_data_fifo_0             |     1|
+|5     |design_1_clk_wiz_0                    |     1|
+|6     |design_1_data_framer_w_0              |     1|
+|7     |design_1_dvi2rgb_0                    |     1|
+|8     |design_1_fir_interface_0              |     1|
+|9     |design_1_fir_wrapper_0                |     1|
+|10    |design_1_ila_0                        |     1|
+|11    |design_1_processing_system7_0         |     1|
+|12    |design_1_rgb2dvi_1                    |     1|
+|13    |design_1_rst_ps7_0_100M               |     1|
+|14    |design_1_smartconnect_0               |     1|
+|15    |design_1_tristate_0                   |     1|
+|16    |design_1_tristate_1                   |     1|
+|17    |design_1_xpm_cdc_gen_0                |     1|
+|18    |design_1_xpm_cdc_gen_1                |     1|
+|19    |design_1_xpm_cdc_gen_2                |     1|
+|20    |design_1_xpm_cdc_gen_3                |     1|
+|21    |IBUF                                  |     4|
+|22    |OBUF                                  |     2|
++------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.191 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.949 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2662.191 ; gain = 811.184 ; free physical = 7330 ; free virtual = 21454
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2662.199 ; gain = 860.145 ; free physical = 7330 ; free virtual = 21454
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2675.949 ; gain = 773.227 ; free physical = 7653 ; free virtual = 21665
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2675.957 ; gain = 822.188 ; free physical = 7653 ; free virtual = 21665
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2662.199 ; gain = 0.000 ; free physical = 7440 ; free virtual = 21564
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2675.957 ; gain = 0.000 ; free physical = 7818 ; free virtual = 21830
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2662.199 ; gain = 0.000 ; free physical = 7480 ; free virtual = 21604
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2675.957 ; gain = 0.000 ; free physical = 7823 ; free virtual = 21836
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 4bb68a17
+Synth Design complete | Checksum: fe85b4d
 INFO: [Common 17-83] Releasing license: Synthesis
-60 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+75 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 2662.227 ; gain = 1066.215 ; free physical = 7480 ; free virtual = 21603
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1748.040; main = 1748.040; forked = 247.610
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3348.234; main = 2662.195; forked = 963.867
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2686.203 ; gain = 0.000 ; free physical = 7480 ; free virtual = 21603
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 2675.984 ; gain = 1070.277 ; free physical = 7829 ; free virtual = 21841
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1845.928; main = 1845.928; forked = 274.500
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3361.996; main = 2675.953; forked = 963.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2699.961 ; gain = 0.000 ; free physical = 7829 ; free virtual = 21842
 INFO: [Common 17-1381] The checkpoint '/home/yhawaz/lab3/lab3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 25 19:48:14 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  9 20:48:11 2025...

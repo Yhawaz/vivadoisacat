@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Sep 25 19:48:35 2025
-# Process ID         : 1434028
+# Start of session at: Thu Oct  9 20:48:32 2025
+# Process ID         : 3331756
 # Current directory  : /home/yhawaz/lab3/lab3.runs/impl_1
 # Command line       : vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file           : /home/yhawaz/lab3/lab3.runs/impl_1/design_1_wrapper.vdi
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : AMD Ryzen 7 5825U with Radeon Graphics
-# CPU Frequency      : 3570.704 MHz
+# CPU Frequency      : 4491.191 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 29342 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 37932 MB
-# Available Virtual  : 24124 MB
+# Available Virtual  : 24507 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

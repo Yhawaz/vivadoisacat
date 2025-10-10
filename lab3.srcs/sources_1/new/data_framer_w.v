@@ -19,7 +19,7 @@ module data_framer_w #
     (   .pixel_clk(pixel_clk),
         .pixel_data(pixel_data),
         .trigger(trigger),
-        .rst_in(reset),
+        .rst_in(!reset),
         .m00_axis_tready(m00_axis_tready),
         .m00_axis_tvalid(m00_axis_tvalid),
         .m00_axis_tlast(m00_axis_tlast),
